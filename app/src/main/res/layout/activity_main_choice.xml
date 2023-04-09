@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_choice">
+
+    <TextView
+        android:id="@+id/Levels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="@color/ColorPrimaryDark"
+        android:fontFamily="@font/monofett"
+        android:text="@string/Levels"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/LevelEasy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Levels"
+        android:layout_marginTop="100sp"
+        android:layout_marginEnd="100sp"
+        android:backgroundTint="@color/Color_btn_levels"
+        android:onClick="onClick"
+        android:text="@string/Easy"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/LevelMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LevelEasy"
+        android:layout_marginTop="30sp"
+        android:layout_marginEnd="100sp"
+        android:backgroundTint="@color/Color_btn_levels"
+        android:onClick="onClick"
+        android:text="@string/Middle"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/LevelHard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LevelMiddle"
+        android:layout_marginTop="30sp"
+        android:layout_marginEnd="100sp"
+        android:backgroundTint="@color/Color_btn_levels"
+        android:onClick="onClick"
+        android:text="@string/Hard"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:max="30"
+        android:min="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LevelHard"
+        android:layout_marginTop="86dp"
+        android:accessibilityLiveRegion="none"
+        android:thumbTint="#333" />
+
+    <TextView
+        android:id="@+id/seekBarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+
+</RelativeLayout>

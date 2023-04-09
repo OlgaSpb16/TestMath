@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Levels"
+        android:onClick="onClickLevel"
+        android:title="@string/Levels"
+        android:visible="true"
+        app:showAsAction="never">
+    <menu>
+        <group android:id="@+id/Levelgroup"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/LevelEasy"
+                android:onClick="onClickLevel"
+                android:title="@string/Easy"
+                android:visible="true"
+                app:showAsAction="never" />
+        <item
+            android:id="@+id/LevelMiddle"
+            android:onClick="onClickLevel"
+            android:title="@string/Middle"
+            android:visible="true"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/LevelHard"
+            android:onClick="onClickLevel"
+            android:title="@string/Hard"
+            android:visible="true"
+            app:showAsAction="never" />
+        </group>
+    </menu>
+    </item>
+    <item
+        android:title="@string/Exit"
+        android:visible="true"
+        app:showAsAction="never" />
+</menu>
